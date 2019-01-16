@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended", "prettier", "react-app"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "complexity": "warn",
+    "prettier/prettier": "error",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "vars-on-top": "error",
+    "require-await": "error",
+    "global-require": "error",
+    "newline-per-chained-call": "warn",
+    "linebreak-style": ["error", "unix"],
+    "eqeqeq": "error",
+    "newline-after-var": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-spread": "warn",
+    "no-useless-constructor": "error",
+    "no-dupe-keys": "error",
+    "no-empty": "error",
+    "no-debugger": "error",
+    "no-new-require": "error",
+    "no-mixed-requires": "error",
+    "no-var": "error",
+    "no-const-assign": "error",
+    "no-duplicate-imports": "error",
+    "no-unused-vars": "error",
+    "no-console": "error",
+    "object-literal-sort-keys": false
+  }
+}
